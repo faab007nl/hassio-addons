@@ -1,0 +1,27 @@
+name: "ILO Rest API"
+description: "SSH base ILO Rest API to control and get the power and uid states"
+version: "2.0.0"
+slug: "ilo_rest_api"
+url: https://github.com/faab007nl/ilo3_rest_api
+init: false
+webui: http://[HOST]:[PORT:3547]
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ports:
+  3547/tcp: 3547
+ports_description:
+  3547/tcp: Rest API
+options:
+  SSH_HOST: null
+  SSH_PORT: 22
+  SSH_USERNAME: null
+  SSH_PASSWORD: null
+schema:
+  SSH_HOST: str
+  SSH_PORT: int
+  SSH_USERNAME: str
+  SSH_PASSWORD: str
